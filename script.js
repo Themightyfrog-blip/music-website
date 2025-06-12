@@ -48,7 +48,7 @@
 
 // Spotify API Integration
 const CLIENT_ID = '9534dae236294bddae45ca7fe0f6bff8';
-const REDIRECT_URI = 'http://127.0.0.1:5500';
+const REDIRECT_URI = 'https://music-website-theta-beryl.vercel.app/';
 const SCOPES = 'user-read-currently-playing user-read-playback-state user-modify-playback-state';
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 const CLIENT_SECRET = '90e33f8938ff42b7a842943edc02f815'; // Get this from Spotify Dashboard
