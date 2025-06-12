@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogmusic - Premium Music Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <div class="scroll-indicator"></div>
+    
+    <header class="header glass">
+        <nav class="nav">
+            <div class="logo">Frogmusic</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#discover" class="nav-link">Discover</a></li>
+                <li><a href="#playlists" class="nav-link">Playlists</a></li>
+                <li><a href="#artists" class="nav-link">Artists</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Dark</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="home">
+            <h1 class="hero-title">Your Music, Perfected</h1>
+            <p class="hero-subtitle">Stream millions of songs with crystal clear quality</p>
+            <button class="cta-button" id="connectSpotify">Connect with Spotify</button>
+        </section>
+
+        <section class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for songs, artists, or albums..." id="searchInput">
+        </section>
+
+        <section class="content-section" id="discover">
+            <h2 class="section-title">Discover Music</h2>
+            <div class="cards-grid" id="musicCards">
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🎵 Trending Now</h3>
+                        <p class="card-description">Discover the hottest tracks that everyone's talking about. Updated daily with fresh sounds from around the globe.</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🎸 Rock Classics</h3>
+                        <p class="card-description">Timeless rock anthems that defined generations. From classic rock to modern alternative sounds.</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🎭 Hip Hop Hits</h3>
+                        <p class="card-description">The best of hip hop culture, featuring both underground gems and mainstream chart-toppers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="playlists">
+            <h2 class="section-title">Featured Playlists</h2>
+            <div class="cards-grid">
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🌅 Morning Motivation</h3>
+                        <p class="card-description">Start your day right with energizing tracks that boost your mood and productivity.</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🌙 Midnight Vibes</h3>
+                        <p class="card-description">Smooth, atmospheric sounds perfect for late-night listening and deep contemplation.</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3 class="card-title">🏃‍♂️ Workout Beats</h3>
+                        <p class="card-description">High-energy tracks to power through your fitness routine and keep you motivated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="player-container glass-strong" id="playerContainer">
+        <div class="player">
+            <div class="album-art">♪</div>
+            <div class="track-info">
+                <div class="track-title" id="trackTitle">Connect Spotify to see current track</div>
+                <div class="track-artist" id="trackArtist">Artist name will appear here</div>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn">⏮</button>
+                <button class="control-btn play-btn" id="playBtn">▶</button>
+                <button class="control-btn" id="nextBtn">⏭</button>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="play-track-btn" data-uri="${track.uri}" data-state="play">Play</button>
+            <button class="pause-track-btn" data-uri="${track.uri}" data-state="pause">Pause</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
